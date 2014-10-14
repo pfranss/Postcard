@@ -13,6 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="8Yk-am-UAt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="b9f-Zy-CUe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SagradaFamilia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="VFe-uP-KXa">
@@ -103,6 +104,15 @@
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zlG-lW-5YR"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12M-D9-sBJ">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="157" width="222" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -112,6 +122,7 @@
                                 <exclude reference="DmV-Aj-JWY"/>
                                 <exclude reference="wso-oN-7H5"/>
                                 <exclude reference="M8I-fS-kaV"/>
+                                <exclude reference="12M-D9-sBJ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -121,6 +132,7 @@
                                 <include reference="DmV-Aj-JWY"/>
                                 <include reference="wso-oN-7H5"/>
                                 <include reference="M8I-fS-kaV"/>
+                                <include reference="12M-D9-sBJ"/>
                             </mask>
                         </variation>
                     </view>
@@ -129,6 +141,7 @@
                         <outlet property="enterNameTextField" destination="J63-12-m4H" id="P49-Qd-dh3"/>
                         <outlet property="mailButton" destination="M8I-fS-kaV" id="lAL-WX-pU7"/>
                         <outlet property="messageLabel" destination="wso-oN-7H5" id="tls-Mr-8Ng"/>
+                        <outlet property="nameLabel" destination="12M-D9-sBJ" id="tWY-cp-K8E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -152,6 +165,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ehC-jb-gfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-544.5" y="58"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Moo-if-ZYu">
+            <objects>
+                <viewController id="Xuv-gp-dlo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LVU-d0-HSx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ec1-Mj-F3m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4eE-w9-mrX">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JDJ-Mw-yju" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>
